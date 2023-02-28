@@ -231,7 +231,7 @@ crsp_daily <- crsp_daily %>%
 
 # Drop NAs & subset columns
 crsp_daily <- crsp_daily %>%
-  drop_na(ret_excess, mkt_excess) %>%
+  drop_na(ret_excess) %>%
   select(permno, month, ret_excess, prc, vol)
 
 # Save 
